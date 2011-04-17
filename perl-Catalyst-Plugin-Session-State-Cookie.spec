@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Cookie driver for Catalyst sessions
 License:    GPL+ or Artistic
@@ -20,6 +20,7 @@ BuildRequires: perl(Test::More)
 BuildRequires: perl(namespace::autoclean)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+Obsoletes: perl-Catalyst-P-S-State-Cookie < %{version}-%{release}
 
 %description
 In order for the Catalyst::Plugin::Session manpage to work the session ID
