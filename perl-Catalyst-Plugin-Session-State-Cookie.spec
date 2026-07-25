@@ -1,15 +1,15 @@
 %define upstream_name    Catalyst-Plugin-Session-State-Cookie
-%define upstream_version 0.17
+%define upstream_version 0.18
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Cookie driver for Catalyst sessions
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=catagits/Catalyst-Plugin-Session-State-Cookie
+Source0:	https://cpan.metacpan.org/authors/id/H/HA/HAARG/Catalyst-Plugin-Session-State-Cookie-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
